@@ -12,8 +12,10 @@ const PalindromeChecker: React.FC = () => {
       return;
     }
 
-    
-    const cleanedWord = trimmedWord.toLowerCase().replace(/[^a-z0-9]/g, "");
+    const cleanedWord = trimmedWord
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, "");
+
     if (!cleanedWord) {
       setMessage("❗ Please enter a word with alphanumeric characters.");
       return;
@@ -34,12 +36,12 @@ const PalindromeChecker: React.FC = () => {
 
   return (
     <div className="container">
-      <h2>Palindrome Checker</h2>
+      <h1>Palindrome Checker</h1>
       <input
         type="text"
         placeholder="Type a word..."
         value={word}
-        onChange={({ target: { value } }) => setWord(value)} 
+        onChange={({ target: { value } }) => setWord(value)}
       />
       {message && <p>{message}</p>}
     </div>
