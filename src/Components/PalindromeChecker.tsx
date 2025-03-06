@@ -1,4 +1,6 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react"
+
+
 
 const PalindromeChecker: React.FC = () => {
   const [word, setWord] = useState<string>("");
