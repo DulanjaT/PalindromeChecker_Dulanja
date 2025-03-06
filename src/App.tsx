@@ -2,7 +2,7 @@ import React from "react";
 import PalindromeChecker from "./Components/PalindromeChecker";
 import "./styles.css";
 import './main.css'
-import './app.css'
+import './App.css'
 
 
 const App: React.FC = () => {
